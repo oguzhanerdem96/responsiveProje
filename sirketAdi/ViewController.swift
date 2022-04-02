@@ -29,10 +29,55 @@ class ViewController: UIViewController {
         return txtView
     }()
     
+    private let btnOnceki : UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Önceki", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+        button.setTitleColor(.darkGray, for: .normal)
+        return button
+        
+    }()
+    private let btnSonraki : UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Sonraki", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+        button.setTitleColor(.yeniKirmizi, for: .normal)
+        return button
+        
+    }()
+    private let pageControl : UIPageControl = {
+        let pControl = UIPageControl()
+        pControl.currentPage = 0
+        
+        pControl.numberOfPages = 5
+        pControl.currentPageIndicatorTintColor = UIColor.yeniKirmizi
+        pControl.pageIndicatorTintColor = UIColor.acikKirmizi
+        
+        return pControl
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(txtSirketAdi)
+        buttonControl()
         layoutDuzenle()
+        
+    }
+    
+    fileprivate func buttonControl() {
+     
+        
+        let butonStackView = UIStackView(arrangedSubviews: [btnOnceki,pageControl,btnSonraki])
+        butonStackView.translatesAutoresizingMaskIntoConstraints = false
+        butonStackView.distribution = .fillEqually
+        view.addSubview(butonStackView)
+        NSLayoutConstraint.activate([
+            butonStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            butonStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            butonStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            butonStackView.heightAnchor.constraint(equalToConstant: 50),
+            ])
     }
     
     private func layoutDuzenle() {
@@ -40,6 +85,10 @@ class ViewController: UIViewController {
         let ustView = UIView()
         view.addSubview(ustView)
         ustView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        
+        
         
         ustView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         ustView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
@@ -63,3 +112,7 @@ class ViewController: UIViewController {
 
 }
 
+extension UIColor {
+    static var yeniKirmizi = UIColor (red: 229/255, green: 70/255, blue: 129/255, alpha: 1)
+    static var acikKirmizi = UIColor (red: 250/255, green: 210/255, blue: 215/255, alpha: 1)
+}

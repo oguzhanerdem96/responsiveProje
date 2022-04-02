@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6659CD4C27F8473500F670F4 /* SayfaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6659CD4B27F8473500F670F4 /* SayfaCell.swift */; };
 		665F452927F73B7500595F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F452827F73B7500595F67 /* AppDelegate.swift */; };
 		665F452B27F73B7500595F67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F452A27F73B7500595F67 /* SceneDelegate.swift */; };
 		665F452D27F73B7500595F67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F452C27F73B7500595F67 /* ViewController.swift */; };
 		665F453027F73B7500595F67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665F452E27F73B7500595F67 /* Main.storyboard */; };
 		665F453227F73B7500595F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665F453127F73B7500595F67 /* Assets.xcassets */; };
 		665F453527F73B7500595F67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665F453327F73B7500595F67 /* LaunchScreen.storyboard */; };
+		665F453F27F7873C00595F67 /* GecisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F453E27F7873C00595F67 /* GecisController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6659CD4B27F8473500F670F4 /* SayfaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SayfaCell.swift; sourceTree = "<group>"; };
 		665F452527F73B7500595F67 /* sirketAdi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sirketAdi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665F452827F73B7500595F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665F452A27F73B7500595F67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		665F453127F73B7500595F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		665F453427F73B7500595F67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		665F453627F73B7500595F67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665F453E27F7873C00595F67 /* GecisController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GecisController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				665F453127F73B7500595F67 /* Assets.xcassets */,
 				665F453327F73B7500595F67 /* LaunchScreen.storyboard */,
 				665F453627F73B7500595F67 /* Info.plist */,
+				665F453E27F7873C00595F67 /* GecisController.swift */,
+				6659CD4B27F8473500F670F4 /* SayfaCell.swift */,
 			);
 			path = sirketAdi;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6659CD4C27F8473500F670F4 /* SayfaCell.swift in Sources */,
 				665F452D27F73B7500595F67 /* ViewController.swift in Sources */,
 				665F452927F73B7500595F67 /* AppDelegate.swift in Sources */,
 				665F452B27F73B7500595F67 /* SceneDelegate.swift in Sources */,
+				665F453F27F7873C00595F67 /* GecisController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +299,6 @@
 				INFOPLIST_FILE = sirketAdi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +325,6 @@
 				INFOPLIST_FILE = sirketAdi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
