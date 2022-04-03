@@ -15,6 +15,7 @@
 		665F453227F73B7500595F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665F453127F73B7500595F67 /* Assets.xcassets */; };
 		665F453527F73B7500595F67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665F453327F73B7500595F67 /* LaunchScreen.storyboard */; };
 		665F453F27F7873C00595F67 /* GecisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F453E27F7873C00595F67 /* GecisController.swift */; };
+		66A6122927F8A12D000FA36B /* sayfalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A6122827F8A12D000FA36B /* sayfalar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		665F453427F73B7500595F67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		665F453627F73B7500595F67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		665F453E27F7873C00595F67 /* GecisController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GecisController.swift; sourceTree = "<group>"; };
+		66A6122827F8A12D000FA36B /* sayfalar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sayfalar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				665F453627F73B7500595F67 /* Info.plist */,
 				665F453E27F7873C00595F67 /* GecisController.swift */,
 				6659CD4B27F8473500F670F4 /* SayfaCell.swift */,
+				66A6122827F8A12D000FA36B /* sayfalar.swift */,
 			);
 			path = sirketAdi;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A6122927F8A12D000FA36B /* sayfalar.swift in Sources */,
 				6659CD4C27F8473500F670F4 /* SayfaCell.swift in Sources */,
 				665F452D27F73B7500595F67 /* ViewController.swift in Sources */,
 				665F452927F73B7500595F67 /* AppDelegate.swift in Sources */,

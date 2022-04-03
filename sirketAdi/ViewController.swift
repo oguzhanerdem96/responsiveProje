@@ -9,14 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let googleImage : UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "google.png"))
+        let googleImage : UIImageView = {
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "google"))
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
-    let txtSirketAdi : UITextView = {
+        let txtSirketAdi : UITextView = {
         let txtView = UITextView()
 
         let attrText = NSMutableAttributedString(string: "Ailemizin Arama Moturu Google...", attributes:[ NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18)])

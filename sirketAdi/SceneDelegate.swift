@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             window?.makeKeyAndVisible()
 
             let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
             let gecisController = GecisController(collectionViewLayout: layout)
             window?.rootViewController = gecisController
         
